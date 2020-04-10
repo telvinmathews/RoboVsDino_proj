@@ -6,10 +6,12 @@ using System.Threading.Tasks;
 
 namespace RobotsVsDinosaurs
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            Weapon primeWeapon = new Weapon(20);
+            Robot autoBots = new Robot("Prime", 100, 200, primeWeapon);
         }
     }
 }
