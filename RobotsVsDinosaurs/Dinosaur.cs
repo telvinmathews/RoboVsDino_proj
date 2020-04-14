@@ -27,5 +27,11 @@ namespace RobotsVsDinosaurs
         }
 
         //Member Methods (what the class does).
+
+        public void DinoAttackRobot(Robot robot, Dinosaur dinosaur)
+        {
+            robot.health -= dinosaur.attackPower;
+            dinosaur.energy -= dinosaur.attackPower;
+        }
     }
 }

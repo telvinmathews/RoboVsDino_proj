@@ -10,8 +10,6 @@ namespace RobotsVsDinosaurs
     {
         static void Main(string[] args)
         {
-            Weapon primeWeapon = new Weapon(20);
-            Robot autoBots = new Robot("Prime", 100, 200, primeWeapon);
         }
     }
 }

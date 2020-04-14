@@ -9,24 +9,20 @@ namespace RobotsVsDinosaurs
     public class Weapon
     {
         //Member variables (what class has).
-        public string[] weaponArray = { "Ion blaster", "Stinger blaster", "Interceptor" };
+        //public string[] weaponArray = { "Ion blaster", "Stinger blaster", "Interceptor" };
         public double attackPower;
         public string type;
 
         //Conductor (Spawner-initiate-to begain -produce).
 
-        public Weapon(double attackPower)
+        public Weapon(string type, double attackPower)
         {
-            this.type = SelectWeapon();
+            this.type = type;
             this.attackPower = attackPower;
         }
 
         //Member Methods (what the class does).
 
-        public string SelectWeapon()
-        {
-            string tempWeapon = weaponArray[0];
-            return tempWeapon;
-        }
+        
     }
 }
